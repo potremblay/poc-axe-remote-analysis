@@ -1,23 +1,9 @@
-Dependancies: 
+# Proof of concept: Using Axe remotly to analyse website
 
-```npx axe https://www.deque.com```
+Run the project locally with `npm start:dev`
 
---save deque-site.json
+Please check the .env.exemple file.
 
---dir ./axe-results/ --timeout=120
+------
 
-
- * * * * * *
-  | | | | | |
-  | | | | | day of week
-  | | | | month
-  | | | day of month
-  | | hour
-  | minute
-  second ( optional )
-
-
-node -r dotenv/config your_script.js
-
-
-heroku create --buildpack https://github.com/heroku/heroku-buildpack-google-chrome.git
+Will lauch axe with selenium on desired url (from the form) and log the result in MongoDB.
