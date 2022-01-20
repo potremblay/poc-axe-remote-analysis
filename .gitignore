@@ -1,4 +1,4 @@
 .env
 .vscode
 node_modules
-test
+testheroku logs --tail
