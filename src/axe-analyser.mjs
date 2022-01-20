@@ -2,11 +2,9 @@ import AxeBuilder from '@axe-core/webdriverjs'
 import { Builder } from 'selenium-webdriver'
 import chrome from 'selenium-webdriver/chrome.js'
 
-const chromeOptions = new chrome.Options().windowSize({ width: 1920, height: 1080 })
-
-chromeOptions.addArguments('--headless')
-chromeOptions.addArguments('--disable-gpu')
-chromeOptions.addArguments('--no-sandbox')
+const chromeOptions = new chrome.Options()
+  .headless()
+  .windowSize({ width: 1920, height: 1080 })
 
 const driver = new Builder()
   .forBrowser('chrome')
