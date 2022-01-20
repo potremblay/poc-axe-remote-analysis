@@ -17,4 +17,7 @@ Dependancies:
   second ( optional )
 
 
-  node -r dotenv/config your_script.js
+node -r dotenv/config your_script.js
+
+
+heroku create --buildpack https://github.com/heroku/heroku-buildpack-google-chrome.git

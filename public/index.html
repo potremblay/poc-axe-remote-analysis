@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC Axe remote Analyser</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+</head>
+<body>
+
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Proof of concept to create a remote axe tool analyser</h1>
+            
+            <form action="/analyse" method="post">
+                <div class="field">
+                    <label class="label" for="siteUrl">Enter the url to analyse</label>
+                    <div class="control">
+                        <input class="input" type="text" id="siteUrl" name="siteUrl">
+                    </div>
+                </div>
+        
+                
+
+                <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link">Start the analysis with Axe</button>
+                    </div>
+                  </div>
+            </form>
+        </div>
+      </section>
+</body>
+</html>
