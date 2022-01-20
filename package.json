@@ -1,0 +1,20 @@
+{
+  "name": "poc-axe-remote-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node -r dotenv/config index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-core/cli": "^4.3.2",
+    "@axe-core/webdriverjs": "^4.3.2",
+    "dotenv": "^14.2.0",
+    "mongodb": "^4.3.1",
+    "node-cron": "^3.0.0",
+    "selenium-webdriver": "^4.1.1"
+  }
+}
